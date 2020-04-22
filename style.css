@@ -1,0 +1,398 @@
+#logo {
+	border-radius: 77%;
+    height: 10%;
+    width: 10%;
+    float: left;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.flex {
+    height: 1px;
+    clear: both;
+  }
+
+#quote {
+    position: relative;
+    text-align: center;
+}
+
+#qblock {
+    float: right;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato:300,400,700');
+html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
+	margin: 0;
+	padding: 0;
+}
+html, body { min-height: 100%; }
+
+body {
+	background-color: #345;
+	background-image: linear-gradient(to bottom, #0009, transparent);
+	color: #eee;
+	font-family: 'Lato', sans-serif;
+	font-size: 62.5%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+code {
+	background: #fff1;
+	font-family: 'Inconsolata', monospace;
+	padding: .2em .4em;
+}
+
+#quote, #qcite {
+    margin-top: 5%;
+    font-size: 2em;
+}
+
+.headd {
+	text-align: center;
+}
+.photo {
+	float : right;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 700;
+}
+.photo > img {
+	margin-left: 10px;
+	height: 300px;
+	width: 200px;
+	border-radius: 8px;
+}	
+
+.content {
+	position: relative;
+	background-color: #e9e9e9;
+	border-radius: 8px;
+	box-sizing: border-box;
+	color: #666;
+	font-size: 1.6em;
+	line-height: 1.4em;
+	margin: 20px auto;
+	margin-top: 80px;
+	padding: 20px;
+	width: 100%;
+	max-width: 65%;
+	z-index: 1;
+}
+.content ul {
+	margin: .5em 2em;
+	padding: 0;
+}
+
+#footer ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	font-size: 2em;
+	font-weight: 300;
+}
+#footer ul li {
+	padding: 0 .5em;
+}
+
+#footer {
+	background-color: #246c;
+	background-image: linear-gradient(to bottom, transparent, #0009);
+	border-top: 1px solid #fff3;
+	box-shadow: inset 0 1px 0 #fff3, 0 0 32px #000;
+	overflow: hidden;
+	padding: 8px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9001;
+}
+
+strong {
+    position: relative;
+    text-align: center;
+}
+
+.love {
+	height: 15px;
+	width: 15px;
+}
+
+
+A {
+    text-decoration: none;
+   } 
+   A:hover { 
+    text-decoration: underline; 
+    color: red;
+   } 
+
+#footer a {
+	color: #85c6f6;
+	padding: 1em 0;
+	text-decoration: none;
+}
+#footer ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	font-size: 2em;
+	font-weight: 300;
+}
+#footer ul li {
+	padding: 0 .5em;
+}
+
+/* Appearance */
+.links {
+	background-color: #123;
+	background-image: linear-gradient(to bottom, #0003, transparent);
+	border-bottom: 1px solid #0003;
+	box-shadow: 0 0 32px #0003;
+	font-size: 2em;
+	font-weight: 300;
+}
+
+.headd > a {
+	font-size: 10px;
+}
+
+.links > a {
+	vertical-align: middle;
+	color: #9ab;
+	padding: .75em;
+	text-align: center;
+	text-decoration: none;
+	transition: all .5s;
+}
+.links > a:hover {
+	background: #ffffff06;
+	color: #adf;
+}
+.links > .line {
+	background: #68a;
+	height: 1px;
+	pointer-events: none;
+}
+
+.bottom {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 0xp;
+	margin-top: 5px;
+	position: relative; 
+    left: 0; bottom: 0; 
+    padding: 10px; 
+    width: 100%; */
+}
+
+#avia {
+	width: 75%;
+	height: 60%;
+	margin-left: 12%;
+	margin-right: 5%;
+
+}
+
+#id {
+	font-size: 20px;
+}
+
+#header {
+	width: 100%;
+	margin-top: 0;
+	left: 0;
+	right: 0;
+}
+/* Анимация лучше не трогать (с) Егор */
+.links {
+	display: grid;
+	grid-template-columns: repeat(var(--items), 1fr);
+	position: relative;
+}
+.links > .line {
+	opacity: 0;
+	transition: all .5s;
+	position: absolute;
+	bottom: 0;
+	left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+	width: var(--width, calc(100% / var(--items)));
+	--index: 0;
+}
+.links > a:hover ~ .line {
+	opacity: 1;
+}
+
+/*----------------------------------------------*/
+
+.ss.pop-block {
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    height: auto;
+    margin: 1%;
+}
+.close-block {
+    position: fixed;
+    right: 0;
+    bottom: 31.9%;
+    z-index: 2;
+   
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAElBMVEXqAAD8oaH/AAD/ra3/vr7///91+I/7AAAAQklEQVR42oXPwQoAIAgD0JXu/385FfTQgnYweKAp9pUXmE+swAFWAG8owQBTqjQQ8SQOcAdRQVtkqHy7dDFd/X/tAVqqAopyUfkOAAAAAElFTkSuQmCC);
+    cursor: pointer;
+}
+ 
+#pop-checkbox {
+    display: none;
+}
+#pop-checkbox:checked + .pop-block {
+    visibility: hidden;
+}
+ 
+#sob2 {
+    position: fixed;
+    right: 4px;
+    bottom: 0;
+    width: auto;
+    height: 68%;
+    z-index: 2;
+}
+
+#lap {
+    position: fixed;
+    right: 4px;
+    bottom: 0;
+    width: auto;
+    height: 34%;
+    z-index: 2;
+}
+
+#dude {
+    position: fixed;
+    right: 4px;
+    bottom: 0;
+    width: auto;
+    height: 60%;
+    z-index: 2;
+}
+
+#naval {
+		position: fixed;
+		right: 4px;
+		bottom: 0;
+		width: auto;
+		height: 65%;
+		z-index: 2;
+}
+
+/*----------------------------------------------*/
+/*Каждый индекс - номер в списке */
+.links > a:nth-of-type(1):hover ~ .line { --index: 1; }
+.links > a:nth-of-type(2):hover ~ .line { --index: 2; }
+.links > a:nth-of-type(3):hover ~ .line { --index: 3; }
+.links > a:nth-of-type(4):hover ~ .line { --index: 4; }
+.links > a:nth-of-type(5):hover ~ .line { --index: 5; }
+.links > a:nth-of-type(6):hover ~ .line { --index: 6; }
+.links > a:nth-of-type(7):hover ~ .line { --index: 7; }
+.links > a:last-of-type:hover ~ .line { --index: var(--items); }
+
+/* table ------------- */
+
+table {
+	/*font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;*/
+	font-size: 14px;
+	border-radius: 10px;
+	border-spacing: 0;
+	text-align: center;
+	margin: auto;
+	width: 100%;
+	}
+	
+
+	th {
+	background: #F7C36A;
+	color:#666;
+	text-shadow: 0 0px 0px #2D2020;
+	padding: 10px 20px;
+	}
+	td {
+		font-size: 16px;
+	}
+	th, td {
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	border-color: white;
+	}
+	th:first-child, td:first-child {
+	text-align: left;
+	}
+	th:first-child {
+	border-top-left-radius: 10px;
+	}
+	th:last-child {
+	border-top-right-radius: 10px;
+	border-right: none;
+	}
+	.ukrain {
+		background: #2A93CE;
+	}
+	td {
+	padding: 10px 20px;
+	background: #2A93CE;
+	}
+	tr:last-child td:first-child {
+	border-radius: 0 0 0 10px;
+	}
+	tr:last-child td:last-child {
+	border-radius: 0 0 10px 0;
+	}
+	tr td:last-child {
+	border-right: none;
+	}
+
+
+/* ----------------- */
+
+/* artem learn */
+#bash {
+	position: fixed; 
+    right: 4px; 
+    bottom: 0; 
+    width: auto;
+    height: 58%; 
+    z-index: 2;
+}
+
+.mine {
+	text-align: center;
+}
+/* artem learn end*/
+
+/* !---------------------------------
+Misha's part of CSS */
+ 
+#for_interview {
+    border-radius: 77%;
+    height: 15%;
+    width: 15%;
+    float: left;
+    margin-left: 1%;
+    margin-right: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+ 
+.for_div {
+    overflow: hidden;
+}
+ 
+/* --------------------------------> */
